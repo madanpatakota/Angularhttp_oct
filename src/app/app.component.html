@@ -5,25 +5,56 @@
     <th>Title</th>
     <th>Completed</th>
   </tr>
-  <tr *ngFor="let item of data">
-    <td>{{item.userId}}</td>
-    <td>{{item.id}}</td>
-    <td>{{item.title}}</td>
-    <td>{{item.completed}}</td>
-  </tr>
-</table> -->
+    <tr *ngFor="let item of data">
+      <td>{{item.userId}}</td>
+      <td>{{item.id}}</td>
+      <td>{{item.title}}</td>
+      <td>{{item.completed}}</td>
+    </tr>
+  </table> -->
 
-<table>
-  <tr>
-    <th> ID</th>
-    <th>Name</th>
-    <th>Age</th>
-    <th>Course</th>
-  </tr>
-  <tr *ngFor="let item of data">
-    <td>{{item.id}}</td>
-    <td>{{item.name}}</td>
-    <td>{{item.age}}</td>
-    <td>{{item.course}}</td>
-  </tr>
-</table>
+  <table *ngIf="showTableData">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Course</th>
+    </tr>
+    <tr *ngFor="let item of data">
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.age}}</td>
+      <td>{{item.course}}</td>
+    </tr>
+  </table>
+
+
+    <input type="text" placeholder="Enter ID to Fetch Data" #inputelement />
+
+  <hr>
+
+  <button (click)="fetchData()">Fetch All Data</button>
+
+
+
+
+  <hr>
+<h3>Fetch BY ID</h3>
+
+
+
+<br>
+<button (click)="fetchDataByID(inputelement)">Fetch Data by ID</button>
+
+
+<hr>
+<h3>Add New Student Data</h3>
+<button (click)="AddStudent()">Add Student</button>
+
+
+
+<hr>
+<h3>Delete Student Data</h3>
+<button (click)="DeleteStudent(inputelement)">Delete Student</button>
+
+
