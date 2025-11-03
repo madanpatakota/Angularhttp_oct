@@ -1,0 +1,23 @@
+{
+  "Students": [
+   {
+      "id": 1,
+      "name": "John Doe",
+      "age": 22,
+      "course": "Computer Science"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "age": 24,
+      "course": "Mathematics"
+    },
+    {
+      "id": 3,
+      "name": "Sam Brown",
+      "age": 21,
+      "course": "Physics"
+    }
+  ]
+  
+}
