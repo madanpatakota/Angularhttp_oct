@@ -29,7 +29,7 @@
   </table>
 
 
-    <input type="text" placeholder="Enter ID to Fetch Data" #inputelement />
+    <input type="text" placeholder="Enter ID" #inputelement />
 
   <hr>
 
@@ -58,3 +58,14 @@
 <button (click)="DeleteStudent(inputelement)">Delete Student</button>
 
 
+
+<hr>
+<h3>Update Student Data</h3>   
+<button (click)="UpdateStudent(inputelement)">Update Student</button>
+<!-- Lets assume i am going to pass ID 1 from the textbox -->
+
+
+<hr>
+<h3>Patch Student Data</h3>   
+<button (click)="PatchStudent(inputelement)">Patch Student</button>
+<!-- Lets assume i am going to pass ID 1 from the textbox -->
